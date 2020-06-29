@@ -243,7 +243,7 @@ string LinuxParser::Ram(int pid) {
         std::stringstream result(value);
         
         // Convert to MB (2 d.p)
-        result << std::fixed << std::setprecision(2) << stof(value);
+        result << std::fixed << std::setprecision(2) << stof(value) / 1000;
         
         return result.str();
       }
