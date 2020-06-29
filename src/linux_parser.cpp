@@ -249,7 +249,7 @@ string LinuxParser::Ram(int pid) {
       }
     }
   }
-  return string();
+  return "0";
 }
 
 // DONE: Read and return the user ID associated with a process
@@ -265,7 +265,7 @@ string LinuxParser::Uid(int pid) {
       }
     }
   }
-  return string();
+  return "0";
 }
 
 // DONE: Read and return the user associated with a process
